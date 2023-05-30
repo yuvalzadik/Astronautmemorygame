@@ -1,0 +1,56 @@
+/* יובל צדיק 208996231 */
+/* דור בן שטרית 208631887*/
+body {
+  background: url('https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 75px;
+  background-color: #ccc;
+  background-image: url('Astronaut.jpg'); 
+  background-size: cover;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+.card.flipped, .card.matched {
+  background-image: url('flippedStar.jpg'); 
+  color: #060000;
+  font-weight: bold;
+}
+
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#play-again {
+  display: none;
+  margin-top: 20px;
+}
